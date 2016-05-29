@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.liuqun.fragmentdemo.MainActivity">
+
+    <Button
+        android:id="@+id/btnOne"
+        android:textSize="15sp"
+        android:text="碎片一"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnTwo"
+        android:textSize="15sp"
+        android:text="碎片二"
+        android:layout_below="@+id/btnOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <FrameLayout
+        android:layout_toRightOf="@+id/btnOne"
+        android:id="@+id/flContainer"
+        android:background="#F00"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
